@@ -1,0 +1,33 @@
+/* <STYLE TYPE="text/css">
+ * songs.css seanho@cs.unc.edu 3May1999 
+ * The official W3C Rec. is http://www.w3.org/TR/REC-CSS2
+ * Tested on NSNav 4.08, 4.5, and 4.61 (w/, w/o CSS), and Lynx 2.8.1 on Linux 
+ * NSComm 4.08 on NT4; IE5 on W95
+ * positioning fails on IE4 on NT4
+ * NS on unix doesn't fetch CSS when printing (ok on NT)
+ *
+ * in html that uses this, don't put 'media=print,screen' or NS won't use it
+ */
+
+body, p, h1, h2, h3, h4, h5, h6, td
+  { font-family: sans-serif; }
+body, p, td	{ font-size: 14pt; }
+h1		{ font-size: 18pt; }
+address 	{ font-size: small; }
+
+p { position: relative; } /* white-space: nowrap; line-height: 1em; */
+i {
+  position: absolute;
+  top: -0.8em;
+  z-index: -5;
+  color: blue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: x-small;
+}
+/* To hide the chords, put the following lines in the html's <HEAD>:
+   (the blank vertical space from the <p> is still present)
+  <STYLE TYPE="text/css"><!-- 
+  i { visibility: hidden } 
+  --></STYLE>
+*/

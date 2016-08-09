@@ -1,0 +1,34 @@
+/* songs.css 
+ * Copyright seanho@seanho.com 1999-2006
+ * Ref: http://www.w3.org/TR/REC-CSS2
+ */
+@import "http://seanho.com/seanho.css";
+
+body {
+  background-image: url("ccli-license.gif");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom right;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, td {
+  font-family: "Arial", "Helvetica", "Geneva", sans-serif;
+  color: black;
+}
+
+body, p, td, h1	{ font-size: 18pt; }
+body.small, .small p, .small td, .small h1	{ font-size: 16pt; }
+address { font-size: small; }
+
+p, td { position: relative; }
+i {		/* chords */
+  position: absolute;
+  width: 0em;
+  top: -1em;
+  color: blue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50%;
+  white-space: nowrap;
+}
